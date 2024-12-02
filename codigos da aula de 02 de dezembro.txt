@@ -1,0 +1,46 @@
+	//nota de aluno//
+int main()
+{
+  int n1=6;
+  if(n1>0){
+      printf("numero positivo\n");
+  }
+  else{
+      printf("número negativo\n");
+  }
+  printf("Finalizando..........");
+    return 0;
+}
+
+   //velocidade veiculo//
+
+int main()
+{
+  float speed;
+  printf("digite  valor capturado\n");
+  scanf("%f", &speed);
+  if(speed>80){
+      printf("o veículo passa da velocidade.");
+  }
+  else{
+      printf("o veículo tá de boa,relaxe.");
+  }    
+    return 0;
+}
+
+ //desconto de 10%//
+
+int main()
+{
+  float compra;
+  printf("digite  valor capturado\n");
+  scanf("%f", &compra);
+  if(compra>=500){
+    
+     printf("o valor ficará %f com o desconto especial da loja aplicado", compra*0.9);
+  }
+  else{
+      printf("o valor ficará %f", compra);
+  }    
+    return 0;
+}
