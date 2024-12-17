@@ -250,7 +250,7 @@ int main()
     }
     */
     //Tarifa de parque
-    /*
+
     int h1,mn1,h2,mn2;
     int minutostotais1,minutostotais2;
     int diferenca,resto,horatotal;
@@ -264,6 +264,40 @@ int main()
     diferenca=minutostotais2-minutostotais1;
     resto=diferenca%60;
     horatotal=diferenca/60;
+    if(h2<h1){
+        diferenca=(minutostotais2-minutostotais1)+1440;
+        horatotal=(24-h1+h2);
+        resto=horatotal*60;
+
+        if(diferenca<121 && diferenca>0){
+        if (resto>0){
+        valortotal=horatotal;
+        printf("%f reais",valortotal);}
+        else {
+        valortotal=horatotal*1;
+        printf("%f real",valortotal);}
+    }
+    else if(diferenca>=121 && diferenca<241){
+        if (resto>0){
+        valortotal=(((horatotal-1)*1.40)+2) ;
+        printf("%f reais",valortotal);}
+        else {
+        valortotal=(((horatotal-2)*1.40)+2) ;
+        printf("%f reais",valortotal);}
+    }
+    else if(diferenca>=241 && diferenca>0){
+
+         if (resto>0){
+       valortotal=(((horatotal-3)*2.00)+4.8);
+        printf("%f reais",valortotal);}
+
+        else {
+      valortotal=(((horatotal-4)*2.00)+4.8);
+        printf("%f reais",valortotal);}
+
+    }
+    }
+    else{
     if(diferenca<121 && diferenca>0){
         if (resto>0){
         valortotal=1+horatotal;
@@ -291,6 +325,6 @@ int main()
         printf("%f reais",valortotal);}
 
     }
-    */
+    }
     return 0;
 }
