@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1734470556 source:c:\users\ruan\documents\codecodeblock\lista2\main.c
+	<stdio.h>
+	<locale.h>
+	<math.h>
+
