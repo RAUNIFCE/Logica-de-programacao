@@ -1,0 +1,286 @@
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    //saber se letra é consoante
+    /*
+    char letra;
+    printf("Digite uma letra\n");
+    scanf( "%c",&letra);
+    
+    
+    switch(letra){
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+            printf("essa letra é vogal");
+            break;
+            
+        case 'b':
+        case 'c':
+        case 'd':
+        case 'f':
+        case 'g':
+        case 'h':
+        case 'j':
+        case 'k':
+        case 'l':
+        case 'm':
+        case 'n':
+        case 'p':
+        case 'q':
+        case 'r':
+        case 's':
+        case 't':
+        case 'v':
+        case 'w':
+        case 'x':
+        case 'y':
+        case 'z':
+        case 'B':
+        case 'C':
+        case 'D':
+        case 'F':
+        case 'G':
+        case 'H':
+        case 'J':
+        case 'K':
+        case 'L':
+        case 'M':
+        case 'N':
+        case 'P':
+        case 'Q':
+        case 'R':
+        case 'S':
+        case 'T':
+        case 'V':
+        case 'W':
+        case 'X':
+        case 'Y':
+        case 'Z':
+            printf("essa letra é consoante");
+            break;
+        default:
+            printf(" não é letra");
+    }
+    */
+    
+// saber quantos dias tem no mês
+/*
+    int cod;
+    printf("digite o número do mês\n");
+    scanf("%d",&cod);
+    switch(cod){
+        
+    case 2:
+    printf("esse mês tem 28 dias");
+        break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        printf("esse mês tem 30 dias");
+        break;  
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        printf("esse mês tem 31 dias");
+        break;
+    default:
+            printf("código incorreto");
+    }
+   */
+//código de produto
+    /*
+   int cod;
+    printf("digite o código do produto\n");
+    scanf("%d",&cod);
+    switch(cod){
+        
+    case 1:
+    printf("alimento não-perecível\n");
+        break;
+    case 2 ... 4:
+    printf("alimento perecível\n");
+        break;
+    case 5 ... 6:
+    printf("vestuário\n");
+        break;
+    case 7:
+    printf("higiene pessoal\n");
+        break;
+    case 8 ... 15:
+    printf("Limpeza e Utensílios Domésticos\n");
+        break;
+    default:
+            printf("código inválido");
+    }  
+   */
+//Código de casa de lanches   
+   /*
+   int cod;
+   float qtd,total;
+    printf("digite o código do produto\n");
+    scanf("%d",&cod);
+    switch(cod){
+        
+    case 100:
+    printf("digite a quantidade\n");
+    scanf("%f",&qtd);
+    total=1.7*qtd;
+    printf("o valor deu R$ %.2f\n",total);    
+    break;
+    case 101:
+    printf("digite a quantidade\n");
+    scanf("%f",&qtd);
+    total=2.3*qtd;
+    printf("o valor deu R$ %.2f\n",total);
+    break;
+    case 102:
+    printf("digite a quantidade\n");
+    scanf("%f",&qtd);
+    total=2.6*qtd;
+    printf("o valor deu R$ %.2f\n",total);
+    break;
+    case 103:
+    printf("digite a quantidade\n");
+    scanf("%f",&qtd);
+    total=2.4*qtd;
+    printf("o valor deu R$ %.2f\n",total);
+    break;
+    case 104:
+    printf("digite a quantidade\n");
+    scanf("%f",&qtd);
+    total=2.5*qtd;
+    printf("o valor deu R$ %.2f\n",total);
+    break;
+    case 105:
+    printf("digite a quantidade\n");
+    scanf("%f",&qtd);
+    total=1*qtd;
+    printf("o valor deu R$ %.2f\n",total);
+    break;   
+    }
+   */
+   
+   //Calculadora de conversão
+   /*
+   int cod;
+   float valor,total;
+   char letra;
+   printf("digite oq vc converter \n1-temperatura \n2-distância \n3-moeda \n4peso \n5-sair");
+   scanf("%d",&cod);
+   switch(cod){
+        case 1:
+        printf("digite f para fahrenheit pra celsius e c de celsius pra farenheit\n");
+        scanf(" %c",&letra);
+            switch(letra){
+                case 'f':
+                printf("digite o valor em farenheit\n");
+                scanf("%f",&valor);
+                total=(valor-32)*5/9;
+                printf("o valor fica em %.2f celsius",total);
+                break;
+                case 'c':
+                printf("digite o valor em celsius\n");
+                scanf("%f",&valor);
+                total=(valor*9/5)+32;
+                printf("o valor fica em %.2f farenheit",total);
+                break;
+                default:
+                printf("código inválido");
+            }
+        break;
+        
+        case 2:
+        printf("digite m para milha pra km e k para km pra milha\n");
+        scanf(" %c",&letra);
+            switch(letra){
+                case 'm':
+                printf("digite o valor em milhas\n");
+                scanf("%f",&valor);
+                total=(valor*1.609);
+                printf("o valor fica em %.2f km",total);
+                break;
+                case 'k':
+                printf("digite o valor em km\n");
+                scanf("%f",&valor);
+                total=(valor/1.609);
+                printf("o valor fica em %.2f milhas",total);
+                break;
+                default:
+                printf("código inválido");
+            }
+        break;
+        
+        case 3:
+        printf("digite r pra transformar real em dolar e d de dolar para real\n");
+        scanf(" %c",&letra);
+            switch(letra){
+                case 'r':
+                printf("digite o valor em Reais\n");
+                scanf("%f",&valor);
+                total=(valor/6.07);
+                printf("o valor fica  %.2f dolares ",total);
+                break;
+                case 'd':
+                printf("digite o valor em dólares\n");
+                scanf("%f",&valor);
+                total=(valor*6.07);
+                printf("o valor fica em %.2f Reais",total);
+                break;
+                default:
+                printf("código inválido");
+            }
+        break;
+        
+        case 4:
+        printf("digite k de quilograma pra libra e l de libra para quilograma\n");
+        scanf(" %c",&letra);
+            switch(letra){
+                case 'k':
+                printf("digite o valor em kg\n");
+                scanf("%f",&valor);
+                total=(valor*2.205);
+                printf("o valor fica  %.2f libras ",total);
+                break;
+                case 'l':
+                printf("digite o valor em libras\n");
+                scanf("%f",&valor);
+                total=(valor/2.205);
+                printf("o valor fica em %.2f kg",total);
+                break;
+                default:
+                printf("código inválido");
+            }
+        break;
+        
+   }
+*/
+//Equação do segundo grau
+int c1,c2,c3,delta;
+    printf("Digite o coeficiente a:");
+    scanf("%d",&c1);
+    printf("Digite o coeficiente b:");
+    scanf("%d",&c2);
+    printf("Digite o coeficiente c:");
+    scanf("%d",&c3);
+    delta=(c2*c2)-4*c1*c3;
+    printf("delta %d",delta);
+    switch(delta)
+    return 0;
+}
