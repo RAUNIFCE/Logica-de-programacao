@@ -1,6 +1,6 @@
 
 
-
+#include <math.h>
 #include <stdio.h>
 
 int main()
@@ -272,7 +272,8 @@ int main()
    }
 */
 //Equação do segundo grau
-int c1,c2,c3,delta;
+/*
+int c1,c2,c3,delta,x1,x2;
     printf("Digite o coeficiente a:");
     scanf("%d",&c1);
     printf("Digite o coeficiente b:");
@@ -280,7 +281,118 @@ int c1,c2,c3,delta;
     printf("Digite o coeficiente c:");
     scanf("%d",&c3);
     delta=(c2*c2)-4*c1*c3;
-    printf("delta %d",delta);
-    switch(delta)
+    printf("delta %d \n",delta);
+    if(delta>0){
+        x1=(-c2+(sqrt(delta))) / (2*c1);
+        x2=(-c2-(sqrt(delta))) / (2*c1);
+        printf("As raízes são reais e distintas x1=%d e x2=%d",x1,x2);  
+    }
+    else if(delta==0){
+        x1=(-c2+(sqrt(delta))) / (2*c1);
+        printf("Uma única raiz real x1=%d e ",x1);  
+    }
+    else if(delta<0){
+        printf("Raízes complexas");
+    }
+*/
+//Sistema de cálculo de impostos
+/*
+    int cod;
+    float salario,imposto;
+    printf("digite sua classe \n1-trabalhador formal \n2-autônomo \n3-empresário \n4-sair \n");
+    scanf("%d",&cod);
+    switch(cod){
+        
+        case 1:
+        printf("Digite seu salário anual:\n");
+        scanf("%f",&salario);
+            if(salario<=30000){
+            printf("isento de imposto");
+        }
+            else if(salario>=30000.01 && salario<=70000){
+            imposto=((salario-30000)*0.15);
+            printf("seu valor a ser pago é R$ %.2f",imposto );
+        }
+            else if(salario>70000){
+            imposto=((40000*0.15)+((salario-70000)*0.25));
+            printf("seu valor a ser pago é R$ %.2f",imposto );
+        }
+        break;
+        
+        case 2:
+        printf("Digite seu salário anual:\n");
+        scanf("%f",&salario);
+            if(salario<=20000){
+            printf("isento de imposto");
+        }
+            else if(salario>=20000.01 && salario<=50000){
+            imposto=((salario-20000)*0.1);
+            printf("seu valor a ser pago é R$ %.2f",imposto );
+        }
+            else if(salario>50000){
+            imposto=((30000*0.1)+((salario-50000)*0.2));
+            printf("seu valor a ser pago é R$ %.2f",imposto );
+        }
+        break;
+        
+        case 3:
+        printf("Digite seu salário anual:\n");
+        scanf("%f",&salario);
+            if(salario<=50000){
+            printf("isento de imposto");
+        }
+            else if(salario>=50000.01 && salario<=100000){
+            imposto=((salario-50000)*0.2);
+            printf("seu valor a ser pago é R$ %.2f",imposto );
+        }
+            else if(salario>100000){
+            imposto=((50000*0.2)+((salario-100000)*0.3));
+            printf("seu valor a ser pago é R$ %.2f",imposto );
+        }
+        break;
+    }
+    */
+// descontos loja de conveniência
+    int cod;
+    float valor,total;
+    printf("digite o número de produtos \n");
+    scanf("%d",&cod);
+    switch(cod){
+        case 1 ... 10:
+        printf("digite o valor do produto \n");
+        scanf("%f",&valor);
+        total=valor*cod;
+        printf("O valor total ficou R$ %.2f",total);
+        break;
+        
+        case 11 ... 20:
+        printf("digite o valor do produto \n");
+        scanf("%f",&valor);
+        total=(valor*cod)*0.95;
+        printf("O valor total ficou R$ %.2f",total);
+        break;
+        
+        case 21 ... 50:
+        printf("digite o valor do produto \n");
+        scanf("%f",&valor);
+        total=(valor*cod)*0.9;
+        printf("O valor total ficou R$ %.2f",total);
+        break;
+        
+        default:
+        printf("digite o valor do produto \n");
+        scanf("%f",&valor);
+        total=(valor*cod)*0.8;
+        printf("O valor total ficou R$ %.2f",total);
+        break;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     return 0;
 }
