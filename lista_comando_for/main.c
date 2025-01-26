@@ -192,6 +192,7 @@ int main()
     printf("o %d fatorial é %d ",a,multi);
     */
     //fibonacci
+    /*
     int ciclo,soma1,soma2,soma3;
     printf("digite quantos numeros vc quer em fibonacci menor que 46\n");
     scanf("%d",&ciclo);
@@ -210,8 +211,55 @@ int main()
         soma2=soma1;
         soma1=soma3;
         }
-
     }
+    */
+    //X colunas e Y números
+    /*
+    int x=0,y=0;
+    printf("digite o quantos numeros serão contados\n");
+    scanf("%d",&y);
+    printf("digite o número de colunas entre 1 e 20\n");
+    scanf("%d",&x);
+    for(int i=1;i<=y;i++){
+    int resto;
+        resto=(i%x);
+        printf(" %d",i);
+        if(resto==0){
+            printf("\n");
+        }
+    }
+    */
+    //Leitura de X indefinidas vezes
+    int x=0,s1=0,st=0,resto=0;
+
+    for(int i=1;i>0;i++){
+    printf("digite o valor a ser somado com seus 5 sucessores pares\n");
+    scanf("%d",&x);
+    resto=x%2;
+     if(x==0){
+            printf("%d\n",st);
+            break;
+        }
+    if(resto==0){
+        s1=(x*5)+20;
+    }
+    if(resto==1){
+       s1=(x*5)+25;
+    }
+    st=st+s1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
