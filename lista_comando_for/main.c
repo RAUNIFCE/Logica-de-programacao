@@ -223,13 +223,18 @@ int main()
     for(int i=1;i<=y;i++){
     int resto;
         resto=(i%x);
-        printf(" %d",i);
-        if(resto==0){
+        printf("%d",i);
+        if(resto==0 && i!=y){
             printf("\n");
+        }
+
+        else{
+            printf(" ");
         }
     }
     */
     //Leitura de X indefinidas vezes
+    /*
     int x=0,s1=0,st=0,resto=0;
 
     for(int i=1;i>0;i++){
@@ -248,7 +253,7 @@ int main()
     }
     st=st+s1;
     }
-
+    */
 
 
 
