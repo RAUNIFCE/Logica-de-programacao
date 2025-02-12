@@ -242,17 +242,17 @@ int main()
     */
     //DECIMAL PRA BINÁRIO
 
-    int num=0,bin=0,resto=0,fator=1;
+    int num=0,bin=0,resto=0,multp=1;
     printf("informe um valor:\n");
     scanf("%d",&num);
     while(num>0){
         resto=num%2;
-        bin=bin+(resto*fator);
+        bin=bin+(resto*multp);
         num=num/2;
-        fator=fator*10;
+        multp=multp*10;
 
     }
-    printf(" %d",bin);
+    printf("%d",bin);
 
     //soma dos algarismos
     /*
