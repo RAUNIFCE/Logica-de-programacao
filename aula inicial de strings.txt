@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	/*
+	char nome[30];
+	printf("Informe seu nome:\n");
+	fgets(nome,30,stdin);
+	printf("Meu nome C) %s",nome);
+	*/
+	//informe quantos caracteres tem em uma String
+	/*
+	char nome[50];
+	int i=0;
+	printf("informe seu nome:\n");
+	scanf("%s",nome);
+	while(nome[i]!='\0'){
+	    i++;
+	}
+	printf("tamanho da palavra %d",i);
+	*/
+	//olhe se duas strings são iguais
+	/*
+	char n1[50];
+	char n2[50];
+	int igual=1;
+	int i=0;
+    printf("informe as duas strings\n");
+    fgets(n1,50,stdin);
+    fgets(n2,50,stdin);
+    while(n1[i]!='\0' || n2[i]!='\0'){
+        if(n1[i]!=n2[i]){
+            igual=0;
+        }
+        i++;
+    }
+    if(igual){
+        printf("São iguais");
+    }
+    else{
+        printf("São diferentes");
+    }
+    */
+    //reverter palavra
+    /*
+    char str[50];
+    int cont=0;
+    printf("informe a palavra a ser reversada\n");
+    scanf("%s",str);
+    for(int i=0;str[i]!='\0';i++){
+        cont++;
+    }
+    for(int i=cont;str[i]>=0;i--){
+        printf("%c",str[i]);
+    }
+    */
+    //Contar vogais
+    char str[50];
+    int cont=0;
+    int vogais=0;
+    printf("informe a palavra pra contar suas vogais\n");
+    scanf("%s",str);
+    for(int i=0;str[i]!='\0';i++){
+        cont++;
+    }
+    for(int i=cont;str[i]>=0;i--){
+        if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'||str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O'||str[i]=='U'){
+            vogais++;
+        }
+    }
+    printf("%d",vogais);
+	return 0;
+}
