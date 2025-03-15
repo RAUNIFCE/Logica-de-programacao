@@ -22,6 +22,7 @@ float calcularDesvioPadrao(int vetor[],int n, float media){
     float dp=sqrt(mediageral);
     return dp;
 }
+
 int ContarVogais(char str[] ){
     
     int cont=0;
@@ -50,6 +51,7 @@ int ContarConsoante(char str[] ){
     
     return consoantes;
 }
+
  void interseccao(int v1[], int v2[], int resultado[], int n){
     int p=0;
     for(int i=0;i<n;i++){
@@ -62,6 +64,7 @@ int ContarConsoante(char str[] ){
         }
     }
  }
+ 
 void imprimirResultado(int resultado[],int n){
 printf("valores da interseccao\n");
     for(int i=0;i<n;i++){
@@ -73,6 +76,15 @@ printf("valores da interseccao\n");
         }
     }
 }
+void rotacionarVetor(int vetor[], int n, int k){
+    for(int i=0;i<1;i++){
+        vetor[i]=vetor[i] ^ vetor[n-i];
+        vetor[n-i]=vetor[i] ^ vetor[n-i];
+        vetor[i]=vetor[i] ^ vetor[n-i];
+    }
+}
+
+
 int main()
 {
     //1º questão
@@ -112,16 +124,31 @@ int main()
     */
     
     //3º questao comparadora de vetores
-    
+    /*
    int n=5;
     int v1[]={10,5,2,8,7};
     int v2[]={9,1,7,10,3};
     int resultado[5]={0};
     interseccao(v1,v2,resultado,n);
     imprimirResultado(resultado,n);
+    */
     
+    //4º questao rotacionar vetores
     
-    
-    
+    int n;
+    printf("digite o tamanho do vetor");
+    scanf("%d",&n);
+    int vetor[n];
+    int k;
+    for(int i=0;i<n;i++){
+        printf("Digite o %dº valor do vetor",i+1);
+        scanf("%d",&vetor[i]);
+    }
+    printf("digite o numero de rotações");
+    scanf("%d",&k);
+    rotacionarVetor(vetor,n,k);
+    for(int i=0;i<n;i++){
+        printf("%d\n",vetor[i]);
+    }
     return 0;
 }
