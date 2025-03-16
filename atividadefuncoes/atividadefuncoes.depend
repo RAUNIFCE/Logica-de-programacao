@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1742137048 source:c:\users\ruan\documents\codecodeblock\atividadefuncoes\main.c
+	<stdio.h>
+	<math.h>
+	<string.h>
+
